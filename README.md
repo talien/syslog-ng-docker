@@ -15,6 +15,7 @@ $CID = Rabbitmq's container ID.
 
 After that syslog-ng can connect to rabbitmq-server with the following configuration:
 
+```
 destination d_amqp {
     amqp(
         vhost("/")
@@ -32,3 +33,4 @@ destination d_amqp {
         )
     );
 };
+```
