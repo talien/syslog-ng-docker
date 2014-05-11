@@ -8,7 +8,7 @@ setup_syslog-ng()
   mkdir /install
   mkdir /source
 
-  git clone ${repo:-https://github/balabit/syslog-ng} /source
+  git clone -b ${branch:-master} ${repo:-https://github.com/balabit/syslog-ng} /source
 
   cd /source
   ./autogen.sh
