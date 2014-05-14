@@ -6,7 +6,7 @@ It is a simple syslog-ng devel environment.
 Usage: 
 ```
 docker build -t <tag> precise/syslog-ng-devel-env
-docker run -i -a <tag>
+docker run -i -t <tag>
 ```
 
 This checks out the latest syslog-ng, compiles it,
@@ -21,7 +21,7 @@ The default repo which is checked out is https://github.com/balabit/syslog-ng bu
 environment variable when running the image.
 
 ```
-docker run -i -a -e repo=https://github.com/talien/syslog-ng  <tag>
+docker run -i -t -e repo=https://github.com/talien/syslog-ng  <tag>
 ```
 
 You can re-start the container with docker start -i -a <container>, but the previously opened windows are
